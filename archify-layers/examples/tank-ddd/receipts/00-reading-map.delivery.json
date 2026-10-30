@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "receiptId": "c924d0fc-767b-4a22-93c5-6c0e4e030bfc",
+  "receiptId": "4fa157ce-8135-4f23-bb9e-d5f800c772e8",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
@@ -15,7 +15,7 @@
     "bytes": 565165
   },
   "explainer": {
-    "preparedSha256": "9d3add74da12915bc38c62f2e1eafb955f26b1afb561948c5a15580aec5fd371",
+    "preparedSha256": "37987549ae73db4e485f4303d35a2b55caff0848c517001b4acf220f7cfff061",
     "dependencies": [
       {
         "kind": "repository",

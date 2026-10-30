@@ -55,6 +55,12 @@ Replace the angle-bracket notes. Keep drill tokens character-for-character; `lay
 
 The visible token is `下钻：` plus the element name, with the fullwidth colon. Put that exact string in the table cell and in `layers.json` `drills[].text`. The linker wraps those characters in a relative link after finalize. Do not bold the token and do not split it with formatting. Do not expect a Markdown link to `other.html` to survive explainer validation.
 
+`layers.json` also lists clickable boxes. `diagram` is the figure id, `node` is the box id:
+
+```json
+{"file": "02-contexts.html", "diagram": "context-map", "node": "battle", "href": "03-battle.html"}
+```
+
 `layers.json` example:
 
 ```json

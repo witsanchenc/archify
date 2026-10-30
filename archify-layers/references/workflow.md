@@ -42,6 +42,7 @@ Write `layers.json` in the output directory. `bin/link-pages.mjs` checks its sha
 
 - `pages[]`: `id`, `file` (same directory, `.html`), `title`, `role` (`overview`, `level`, `cross`, `patterns`), `parent` (`null` or an id, no cycles).
 - `drills[]`: `file`, `text` (exact token in that page), `href` (a page file plus an optional `#anchor`).
+- `nodes[]`: `file`, `diagram`, `node`, `href`. One entry for every box that opens a deeper page. The linker fails when that node is missing from the diagram, and when a page has both a diagram and a deeper level but `nodes[]` is empty.
 - `title`: used for `index.html`.
 
 Only `role: "level"` children become “下一层” links. Cross-cutting and mechanisms stay separate links.
@@ -65,7 +66,7 @@ node <archify>/bin/archify.mjs check <page>.html --json
 
 The linker inserts navigation, then moves each `page.delivery.json` to `receipts/`. A receipt left beside the linked file fails `check` with `delivery/provenance-mismatch`, because the hash is the pre-link artifact. `link-report.json` records both hashes. `check` on the linked file validates explainer composition. It does not claim the receipt still matches the linked bytes. Linking must not change `<script>` payloads.
 
-Open `index.html` or the reading-map page. Click one drill link and one “上一层” link.
+Open `index.html` or the reading-map page. Click a diagram box that has a ▸ and confirm it opens the child page. On that page, use 返回上一层 and confirm it returns to the parent. A box without ▸ has no deeper page.
 
 ## Self-check
 
@@ -79,4 +80,4 @@ Before calling the guide done, answer yes to each:
 - There is no third content part.
 - Each page has at most four native diagrams.
 - The revision, origin, and dirty-tree note match the checkout. Unknowns are written. No behavior was filled in from names alone.
-- Finalize passed on every page. After linking, `check` passed on every linked page. A drill token that the linker cannot find is a failure, not a warning.
+- Finalize passed on every page. After linking, `check` passed on every linked page. A drill token or a listed diagram node that the linker cannot find is a failure, not a warning. Every non-root page shows a breadcrumb and 返回上一层. Inline diagrams are still: no flowing edge and no hover fade.

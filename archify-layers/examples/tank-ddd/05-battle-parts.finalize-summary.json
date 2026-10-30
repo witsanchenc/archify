@@ -32,7 +32,7 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "durationMs": 1003,
+  "durationMs": 1022,
   "browserCheck": {
     "requested": false,
     "ran": false

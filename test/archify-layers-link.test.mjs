@@ -44,17 +44,18 @@ test('links parent, next level and drill text without touching script payloads',
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'archify-layers-'));
   writeSite(dir);
   const before = fs.readFileSync(path.join(dir, '01-system.html'), 'utf8');
-  const script = before.match(/<script[\s\S]*<\/script>/)[0];
+  const script = before.match(/<script type="application\/json" id="archify-explainer-prepared">[\s\S]*?<\/script>/)[0];
   const first = run(dir);
   assert.equal(first.status, 0, first.stderr);
   const html = fs.readFileSync(path.join(dir, '01-system.html'), 'utf8');
   assert.match(html, /id="archify-layers-nav"/);
+  assert.match(html, /class="archify-layers-crumbs"/);
   assert.match(html, /href="00-map.html"/);
-  assert.match(html, /上一层：阅读地图/);
+  assert.match(html, /class="archify-layers-up" href="00-map.html">返回上一层/);
   assert.match(html, /href="09-cross.html"/);
   assert.match(html, /<a class="archify-layers-drill" href="00-map.html">下钻：对战<\/a>/);
-  assert.equal(html.match(/<script[\s\S]*<\/script>/)[0], script);
-  assert.doesNotMatch(html.match(/<script[\s\S]*<\/script>/)[0], /archify-layers-drill/);
+  assert.equal(html.match(/<script type="application\/json" id="archify-explainer-prepared">[\s\S]*?<\/script>/)[0], script);
+  assert.doesNotMatch(script, /archify-layers-drill/);
   const second = run(dir);
   assert.equal(second.status, 0, second.stderr);
   assert.equal(fs.readFileSync(path.join(dir, '01-system.html'), 'utf8'), html);
@@ -85,6 +86,38 @@ test('moves a delivery receipt aside so the linked file is not bound to the pre-
   const system = report.pages.find(entry => entry.file === '01-system.html');
   assert.equal(system.preLinkSha256, 'abc');
   assert.match(system.postLinkSha256, /^[0-9a-f]{64}$/);
+});
+
+test('links a diagram box to its child page and rejects a missing node', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'archify-layers-'));
+  const diagram = `<div class="diagram-preview preview-context-map"><svg><g id="n-battle" data-node-id="battle" data-node-label="对战"><text class="t-primary">对战</text></g><g id="n-bus" data-node-id="bus" data-node-label="事件总线"><text class="t-primary">事件总线</text></g></svg></div>`;
+  writeSite(dir, { body: `下钻：对战${diagram}` });
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'layers.json'), 'utf8'));
+  manifest.nodes = [{ file: '01-system.html', diagram: 'context-map', node: 'battle', href: '00-map.html' }];
+  fs.writeFileSync(path.join(dir, 'layers.json'), JSON.stringify(manifest));
+  const payload = fs.readFileSync(path.join(dir, '01-system.html'), 'utf8').match(/<script type="application\/json"[\s\S]*?<\/script>/)[0];
+  const result = run(dir);
+  assert.equal(result.status, 0, result.stderr);
+  const html = fs.readFileSync(path.join(dir, '01-system.html'), 'utf8');
+  assert.match(html, /<a class="archify-layers-node" href="00-map.html"><g class="archify-layers-drill-node" id="n-battle"/);
+  assert.match(html, /对战 ▸/);
+  assert.match(html, /data-motion="still"/);
+  const svg = html.match(/<svg>[\s\S]*?<\/svg>/)[0];
+  assert.match(svg, /<\/a><g id="n-bus" data-node-id="bus"/);
+  assert.equal(html.match(/<script type="application\/json"[\s\S]*?<\/script>/)[0], payload);
+  const report = JSON.parse(fs.readFileSync(path.join(dir, 'link-report.json'), 'utf8'));
+  assert.ok(report.unlinkedNodes.some(entry => entry.node === 'bus'));
+  const again = run(dir);
+  assert.equal(again.status, 0, again.stderr);
+  assert.equal(fs.readFileSync(path.join(dir, '01-system.html'), 'utf8'), html);
+
+  manifest.nodes.push({ file: '01-system.html', diagram: 'context-map', node: 'missing', href: '00-map.html' });
+  fs.writeFileSync(path.join(dir, 'layers.json'), JSON.stringify(manifest));
+  const before = fs.readFileSync(path.join(dir, '00-map.html'), 'utf8');
+  const missing = run(dir);
+  assert.notEqual(missing.status, 0);
+  assert.match(missing.stderr, /missing diagram nodes/);
+  assert.equal(fs.readFileSync(path.join(dir, '00-map.html'), 'utf8'), before);
 });
 
 test('rejects a parent cycle before writing', () => {

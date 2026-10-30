@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T07:36:42.319Z",
+  "startedAt": "2026-10-30T09:26:46.191Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
     "sha256": "8e8b1a8270ef6e23fd071214ff23729a8b928d0fa93c7cc1991f44bf0e16905a",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 686,
+      "durationMs": 678,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "c7959ebc-6298-4787-ba52-842b7f2cb207",
+        "receiptId": "13cafe81-dce1-45ec-a71b-3ecf94847234",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
         "explainer": {
-          "preparedSha256": "a008a1f47075738737d93438065a35e75a459edd2fe68290d9c36edeccae2d2e",
+          "preparedSha256": "70d79c59212d4b942e1da99494bb7b78d98348b9dffc4f501439d7e8484f264f",
           "dependencies": [
             {
               "kind": "repository",
@@ -157,7 +157,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 311,
+      "durationMs": 303,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -216,7 +216,7 @@
               "id": "context-map",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-JGVsEI/child.html",
+                "file": "/tmp/archify-explainer-check-zPLA4l/child.html",
                 "artifact": {
                   "sha256": "9f404d0bfcd84df626f9bbe72110d6f278c1549c622aab75410f690bbb95335b",
                   "bytes": 831911
@@ -434,7 +434,7 @@
               "id": "finish-path",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-EVIEVO/child.html",
+                "file": "/tmp/archify-explainer-check-bMXcRY/child.html",
                 "artifact": {
                   "sha256": "6ff8a137c1e065362b3dae9a772224156118a1a76fdc95ed89378c38cf84511d",
                   "bytes": 824335
@@ -573,7 +573,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "c7959ebc-6298-4787-ba52-842b7f2cb207"
+        "deliveryReceiptId": "13cafe81-dce1-45ec-a71b-3ecf94847234"
       }
     }
   },
@@ -587,8 +587,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/02-contexts.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T07:36:43.371Z",
-  "durationMs": 1051,
+  "finishedAt": "2026-10-30T09:26:47.229Z",
+  "durationMs": 1037,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

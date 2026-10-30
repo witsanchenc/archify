@@ -32,7 +32,7 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "durationMs": 1314,
+  "durationMs": 1295,
   "browserCheck": {
     "requested": false,
     "ran": false

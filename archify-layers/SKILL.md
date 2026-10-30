@@ -52,7 +52,17 @@ Do not add a glossary, tutorial, or runtime guide as a third part.
 
 Write Chinese. One explainer page per level, plus the reading map, cross-cutting page, and mechanisms page. Split a level into sibling pages when the next level is per element (one context, one aggregate) or when a page would hold more than four native diagrams. Archify's explainer authoring limit is four native diagrams per document.
 
-Each page links down to the next level, ideally per element, and back to its parent. The linker fills those links from `layers.json`. Drafts use the drill tokens in the page template. Explainer prose cannot hold relative HTML links by itself.
+Each page links down to the next level and back to its parent. The linker fills those links from `layers.json`. Drafts use the drill tokens in the page template. Explainer prose cannot hold relative HTML links by itself.
+
+## Diagram nodes are links
+
+This is a hard rule. A box, actor, or tree node that has a deeper page must be a clickable link to that page. The link is the box itself, not only a sentence under the figure.
+
+- List every such box in `layers.json` `nodes[]`: `file`, `diagram` (the explainer diagram id), `node` (the native node id), and `href` (the child page).
+- `link-pages.mjs` wraps that SVG node in a link, underlines the label, and adds a ▸ marker. It fails if a listed node is absent, and it fails if a page has both a diagram and a deeper level page but no `nodes[]` entries.
+- Boxes with no deeper page stay plain. Say so in the reading map or the link report. Do not invent a page just to make a box clickable.
+- Every page except the reading map has a breadcrumb and a 返回上一层 link to its parent.
+- Inline diagrams stay still. Do not rely on flowing edges, hover fades, or a click that opens the animated viewer. The linker forces `data-motion="still"` and turns off preview animation. Do not change the `archify` skill or its renderer to do this.
 
 ## Evidence
 

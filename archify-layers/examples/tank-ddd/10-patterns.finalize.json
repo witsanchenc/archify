@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T07:36:51.600Z",
+  "startedAt": "2026-10-30T09:26:57.794Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/10-patterns.archify.md",
     "sha256": "832fd9124d5f75c689bac567f2bdf8adc4fcf31f56f104b3c8ad3da9f6ccbfce",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 270,
+      "durationMs": 265,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,7 +76,7 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "5dccb11e-065e-4c37-89a0-9e85d08a2028",
+        "receiptId": "9f36e197-e6b5-4d27-aa00-07849c339d4f",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
@@ -151,7 +151,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 113,
+      "durationMs": 108,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -206,7 +206,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "5dccb11e-065e-4c37-89a0-9e85d08a2028"
+        "deliveryReceiptId": "9f36e197-e6b5-4d27-aa00-07849c339d4f"
       }
     }
   },
@@ -220,8 +220,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/10-patterns.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T07:36:52.033Z",
-  "durationMs": 433,
+  "finishedAt": "2026-10-30T09:26:58.219Z",
+  "durationMs": 425,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

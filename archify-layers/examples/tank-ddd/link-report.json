@@ -1,61 +1,289 @@
 {
   "ok": true,
-  "note": "Delivery receipts bind the HTML from finalize, before navigation was inserted. They are moved aside so a later check validates the linked pages instead of failing a stale hash.",
+  "note": "Delivery receipts bind the HTML from finalize, before navigation was inserted. They are moved aside so a later check validates the linked pages instead of failing a stale hash. unlinkedNodes are boxes left non-clickable on purpose: they have no deeper page.",
   "pages": [
     {
       "file": "00-reading-map.html",
       "preLinkSha256": "95f727507d198e791c19602f35c638e133a23a64e7fa78d7e494cdc128c62d6f",
-      "postLinkSha256": "2107e5cdc1c0b67592771352e3539f0209684d2dbe4e63a86ad0581685d1619f"
+      "postLinkSha256": "ffd4affa4e261734d8c3fee5d8978ff678c216f15829bf37aa1497bac1d1a08a"
     },
     {
       "file": "01-system.html",
       "preLinkSha256": "027cd916bf7ed7a1748b1fed3a9db03bb22a86c1f47cd8ff8f8bc108f44a57f0",
-      "postLinkSha256": "0d090bf13b90aae7d28e95f2350f069d212a17e2f8abf933968e4730fef48972"
+      "postLinkSha256": "f9acd107458e02ba75fec999b1f9a29bf71e399d237821937dac6a3193ac21cc"
     },
     {
       "file": "02-contexts.html",
       "preLinkSha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
-      "postLinkSha256": "13b4fde50f2d57eb7fca646998b088b99d38d4f108c335d2544057a1d874f9af"
+      "postLinkSha256": "90f99cb99f3dbc0250252c8b5c87fd310d971ecba1aee8965de1be984c4afbbf"
     },
     {
       "file": "03-layers.html",
       "preLinkSha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
-      "postLinkSha256": "04f0d4d2d8a755ea84d108b6f62e083bfdd7b1551ad5a35bbd292d1af4d83dbb"
+      "postLinkSha256": "57ec71823803b3740928583ada9b88344bb5e25fb5348d9185ae3d15840928a7"
     },
     {
       "file": "04-presentation.html",
       "preLinkSha256": "7589a1e58d7bdc50406b76851d3e2004b6ae73c499a7bda8943eba38b2de417f",
-      "postLinkSha256": "9646a26880eb668f95f66396a11eb201a06e595a8e4a27ca0b60bdaeac58aeac"
+      "postLinkSha256": "7e902b0eee2ceea3cec09e1355468cf8baaab15a9cbfd12453a83299b4c69f6a"
     },
     {
       "file": "05-battle-parts.html",
       "preLinkSha256": "285a6d3387858212ae88d507e6ef66e00987add6069a023d6365500d8b268a2b",
-      "postLinkSha256": "cc2055c4290c1ffbafda5711110f9ede59375273da2d51ba1e818b3e80ba8ad0"
+      "postLinkSha256": "7cbc706ba3c4d1bc3839257929833aff05632d8d76eb383d0e55e852f887dec8"
     },
     {
       "file": "06-progression-parts.html",
       "preLinkSha256": "c6b79ff24ca8c0ea3d7b9f4b16005453c9f8c36d1775dddce55ced92e6231de1",
-      "postLinkSha256": "d0e23dc9a8038e240343a4fdfd4571d74176ddce9241e3fad879a9f3a65c67c6"
+      "postLinkSha256": "1a6869a84fcdf9cc27d874b510d57fba76751b6a734f86dc5bbcac271a514e15"
     },
     {
       "file": "07-battle-classes.html",
       "preLinkSha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
-      "postLinkSha256": "0e6607ebf0498383d270ddf1a8f46a592bdc08c9c61f1ed34dd33e8a41bd45ff"
+      "postLinkSha256": "7d03d373c3f188ee507525c3ada40329b5b742dc67352c83543a4c0fa5899506"
     },
     {
       "file": "08-progression-classes.html",
       "preLinkSha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
-      "postLinkSha256": "fbe4605a969ae18f790e9a56f1f76ecb61e3b05a552197cbbea86b46e12e7ca4"
+      "postLinkSha256": "d8dcbad932dcc641d4b30f310d1f76ad1fd6cb41636fab04ae9411a95fd8b0be"
     },
     {
       "file": "09-cross-cutting.html",
       "preLinkSha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
-      "postLinkSha256": "c1eff93110a06b0564d66d22f191d0d67b648e95fdfb389d6980f09462b314de"
+      "postLinkSha256": "91ce9d923de7359a86f8d69ee284b9e8d1e97bba443313904e92745f35910d27"
     },
     {
       "file": "10-patterns.html",
       "preLinkSha256": "8871c4e552527faf6524707e1346af67c36edabd6a5dfd805d1ba12a08c732d9",
-      "postLinkSha256": "61f59a996c66b2fedefacc8584abcf3900426e36803dafb40a6092e968ef8f16"
+      "postLinkSha256": "3bd736fc48c6233f59a773dd9e586f42cdbd538b8bb83f2f80bb2f333996c7c9"
+    }
+  ],
+  "nodeLinks": 31,
+  "unlinkedNodes": [
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "map"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "parts"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "classes"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "player"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "window"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "player"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "bus"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "finish-path",
+      "node": "bus"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "context-map",
+      "node": "bus"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "keys"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "main"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "view"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "keys"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "main"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "view"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "ai"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "events"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "saves"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "json"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "ai"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "listener"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "service"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "store"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "listener"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "service"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "menu"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "playing"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "paused"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "over"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "playing"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "won"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "lost"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "root"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "game"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "tank"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "bullet"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "field"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "hits"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "reward"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "result"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "profile"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "board"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "event"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "root"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "bus"
     }
   ]
 }

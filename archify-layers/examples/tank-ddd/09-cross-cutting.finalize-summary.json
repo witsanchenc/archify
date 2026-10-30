@@ -32,7 +32,7 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "durationMs": 712,
+  "durationMs": 717,
   "browserCheck": {
     "requested": false,
     "ran": false

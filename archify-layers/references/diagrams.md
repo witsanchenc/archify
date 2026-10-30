@@ -6,7 +6,21 @@ A page holds at most four native diagrams. A fifth diagram means a new page that
 
 Prefer shorthand (`@architecture`, `@sequence`, `@workflow`, `@tree`) when it can say the fact. Use `@diagram <type> source=<file>.json` for `class`, `lifecycle`, and any figure that needs explicit geometry. The JSON file sits in the draft directory. Finalize validates it with the same renderer as a standalone diagram.
 
-Node labels stay short: about ten Chinese characters or four English words. Put the sentence in the panel, not in the node. Edge labels stay one or two words.
+Node labels stay short: about ten Chinese characters or four English words. Put the sentence in the panel, not in the node. Edge labels stay one or two words. Leave room for the ▸ the linker appends to a clickable label.
+
+## Clickable boxes
+
+A node that has a deeper page is a link. Record it in `layers.json`:
+
+```json
+{"file": "02-contexts.html", "diagram": "context-map", "node": "battle", "href": "05-battle-parts.html"}
+```
+
+`diagram` is the explainer diagram id. `node` is the id in the shorthand or JSON, the same id Archify writes as `data-node-id`. The linker wraps that box after finalize. A listed node that is missing from the SVG is a failed link, not a warning.
+
+Use the page that describes that part's next level: a context box opens its component page, a component opens its class page. A box with no deeper page is not listed and stays plain. State machines, outside actors, and a shared bus with no zoom of its own are the usual plain boxes. The cross-cutting page is still in the breadcrumb.
+
+The inline figure is static: plain boxes and arrows. Do not add hover motion or a flowing edge to carry the drill-down. The parent page is the breadcrumb and 返回上一层, not a second copy of the child diagram.
 
 ## Which figure
 
