@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-30T07:36:49.551Z",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
+    "sha256": "4a03e489b173537fde0b9e4cfdc2c4f963448a4c0f83a567a0e22271eb51bdb8",
+    "bytes": 2636
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+    "sha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
+    "bytes": 551036
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "4a03e489b173537fde0b9e4cfdc2c4f963448a4c0f83a567a0e22271eb51bdb8",
+          "bytes": 2636
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 504,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "2f09356d-c097-4aa6-a5c4-1ad26fd10a1e",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
+        "output": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+        "explainer": {
+          "preparedSha256": "e2e84aca79ab2256ba5977336d4e6d3a747c1e40b1bf5be7bd5dae555eb7d28f",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "profile",
+              "path": "progression/domain/aggregates/player_profile.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "d108cfa25392fdf28152d8a391c2654ef66ce03b9c80ebead441fb66b1ba987b",
+              "bytes": 1715
+            },
+            {
+              "kind": "repository",
+              "id": "board",
+              "path": "progression/domain/aggregates/high_score_board.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "565d558d5fc93c1c62eec144afde43fafcd723259383388114f1ed8011813a70",
+              "bytes": 1148
+            },
+            {
+              "kind": "repository",
+              "id": "reward",
+              "path": "progression/domain/services/reward.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "4807386363d123a6aae11efa0b7da42af8b4c2bad77d82fd4d68f17ae050f980",
+              "bytes": 1191
+            },
+            {
+              "kind": "repository",
+              "id": "rules",
+              "path": "progression/domain/rules.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "0cb38423e671ba2a0711e9ba19e68ae42f9f63d65552f979f9158fc18a94ba60",
+              "bytes": 169
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "growth-types",
+              "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/progression-types.class.json",
+              "relativePath": "diagrams/progression-types.class.json",
+              "sha256": "1863da31d432a651f4f496e6d56971b069dff8f125411fcc32d857b72802cf66",
+              "bytes": 1441
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "4a03e489b173537fde0b9e4cfdc2c4f963448a4c0f83a567a0e22271eb51bdb8",
+          "bytes": 2636
+        },
+        "artifact": {
+          "sha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
+          "bytes": 551036
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 235,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "check",
+        "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
+          "bytes": 551036
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "45 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "5 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "growth-types: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "growth-types",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-8jD6h1/child.html",
+                "artifact": {
+                  "sha256": "777ff68f9b521e01371947d112175a0940b64ecda95a36afc272e29990e42682",
+                  "bytes": 834661
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 86.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 9.5,
+                    "maxBends": 2,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 64,
+                    "minInteriorSegmentPx": 193,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "actualReaderWidth": 960,
+                    "desiredReaderWidth": 960,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": null,
+                      "from": "reward",
+                      "to": "result"
+                    },
+                    "minimumSourceTextPx": 9.5,
+                    "minimumProjectedTextPx": 9.5,
+                    "semanticTextCount": 27
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "2f09356d-c097-4aa6-a5c4-1ad26fd10a1e"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-30T07:36:50.354Z",
+  "durationMs": 802,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "diagram_type": "class",
+  "meta": {"title": "对战构件依赖"},
+  "layout": {"mode": "grid"},
+  "types": [
+    {"id": "saves", "label": "SaveRepository", "kind": "interface", "row": 0, "col": 0},
+    {"id": "session", "label": "GameSession", "kind": "class", "sublabel": "应用服务", "row": 0, "col": 1},
+    {"id": "game", "label": "Game", "kind": "class", "sublabel": "聚合，内部另页", "row": 0, "col": 2},
+    {"id": "json", "label": "JsonFileSaveRepository", "kind": "class", "row": 1, "col": 0},
+    {"id": "ai", "label": "RandomEnemyAI", "kind": "class", "row": 1, "col": 1}
+  ],
+  "relationships": [
+    {"from": "session", "to": "game", "kind": "dependency", "label": "创建并调用", "fromSide": "right", "toSide": "left"},
+    {"from": "session", "to": "ai", "kind": "dependency", "label": "每格调用", "fromSide": "bottom", "toSide": "top"},
+    {"from": "session", "to": "saves", "kind": "dependency", "label": "存取", "fromSide": "left", "toSide": "right"},
+    {"from": "json", "to": "saves", "kind": "realization", "fromSide": "top", "toSide": "bottom"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
+    "sha256": "8e8b1a8270ef6e23fd071214ff23729a8b928d0fa93c7cc1991f44bf0e16905a",
+    "bytes": 2974
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+    "sha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
+    "bytes": 916619
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/02-contexts.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/02-contexts.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1051,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

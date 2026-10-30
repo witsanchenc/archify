@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-30T07:36:50.726Z",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+    "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
+    "bytes": 3370
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+    "sha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+    "bytes": 548665
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
+          "bytes": 3370
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 456,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "ee36b829-ccee-4253-a4f8-80387bb31f1b",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+        "output": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+        "explainer": {
+          "preparedSha256": "f76bb4e534476464ea680d970fe42211737334bb12c68a66585e75e177179c27",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "root",
+              "path": "shared/aggregate_root.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "3a8241a58d9ded5e7abfcdd178fbdb522e467772fccbc3dc1f156620cc40711c",
+              "bytes": 691
+            },
+            {
+              "kind": "repository",
+              "id": "event",
+              "path": "shared/domain_event.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "840e81e17528445989fe9ac38f8161dfba7fc914e4c14f9782be7536d527314c",
+              "bytes": 451
+            },
+            {
+              "kind": "repository",
+              "id": "main",
+              "path": "presentation/main.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "e59202d735c92c056f941e9a94fe39324bcdda9489b318a21c8e9ccf8a476d24",
+              "bytes": 2714
+            },
+            {
+              "kind": "repository",
+              "id": "order",
+              "path": "tests/test_shared.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "01f3f8a9d5479a791f3de147f634b74992b4274a4b8ec1cdda1f7d5208252711",
+              "bytes": 1198
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "shared-types",
+              "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/shared.class.json",
+              "relativePath": "diagrams/shared.class.json",
+              "sha256": "138571b3b5f498650c02f3714dccc3f66df365979c398e06cf96af6c62add115",
+              "bytes": 883
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
+          "bytes": 3370
+        },
+        "artifact": {
+          "sha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+          "bytes": 548665
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 206,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "check",
+        "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+          "bytes": 548665
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "58 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "5 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "shared-types: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "shared-types",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-NG0RYb/child.html",
+                "artifact": {
+                  "sha256": "98f871d9507c919dd20cab69411404aadddaf677a4903ac27f04a0dba53243ed",
+                  "bytes": 830913
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 9.5,
+                    "maxBends": 2,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 64,
+                    "minInteriorSegmentPx": 148,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "actualReaderWidth": 960,
+                    "desiredReaderWidth": 960,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": null,
+                      "from": "root",
+                      "to": "event"
+                    },
+                    "minimumSourceTextPx": 9.5,
+                    "minimumProjectedTextPx": 9.5,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "ee36b829-ccee-4253-a4f8-80387bb31f1b"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-30T07:36:51.439Z",
+  "durationMs": 712,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

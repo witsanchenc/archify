@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "diagram_type": "class",
+  "meta": {"title": "成长构件依赖"},
+  "layout": {"mode": "grid"},
+  "types": [
+    {"id": "listener", "label": "BattleListener", "kind": "class", "sublabel": "防腐层", "row": 0, "col": 0},
+    {"id": "service", "label": "ProgressionService", "kind": "class", "row": 0, "col": 1},
+    {"id": "profile", "label": "PlayerProfile", "kind": "class", "sublabel": "聚合", "row": 1, "col": 0},
+    {"id": "reward", "label": "RewardService", "kind": "class", "row": 1, "col": 1},
+    {"id": "board", "label": "HighScoreBoard", "kind": "class", "sublabel": "聚合", "row": 1, "col": 2}
+  ],
+  "relationships": [
+    {"from": "listener", "to": "service", "kind": "dependency", "label": "record_battle", "fromSide": "right", "toSide": "left"},
+    {"from": "service", "to": "reward", "kind": "dependency", "label": "settle", "fromSide": "bottom", "toSide": "top"},
+    {"from": "reward", "to": "profile", "kind": "dependency", "label": "加分解锁", "fromSide": "left", "toSide": "right"},
+    {"from": "reward", "to": "board", "kind": "dependency", "label": "提交分数", "fromSide": "right", "toSide": "left"}
+  ]
+}

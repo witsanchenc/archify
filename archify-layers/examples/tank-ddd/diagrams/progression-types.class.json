@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "diagram_type": "class",
+  "meta": {"title": "成长侧的对象"},
+  "layout": {"mode": "grid"},
+  "types": [
+    {"id": "reward", "label": "RewardService", "kind": "class", "sublabel": "通关才结算", "row": 0, "col": 1,
+      "methods": [{"name": "settle", "visibility": "public"}]},
+    {"id": "result", "label": "BattleResult", "kind": "record", "sublabel": "赢没赢、剩几条命", "row": 1, "col": 0,
+      "attributes": [
+        {"name": "won", "type": "bool"},
+        {"name": "lives_left", "type": "int"}
+      ]},
+    {"id": "profile", "label": "PlayerProfile", "kind": "class", "row": 1, "col": 1,
+      "attributes": [
+        {"name": "total_score", "type": "int"},
+        {"name": "unlocked_level", "type": "int"},
+        {"name": "wins", "type": "int"}
+      ],
+      "methods": [
+        {"name": "add_score", "visibility": "public"},
+        {"name": "unlock_next_level", "visibility": "public"}
+      ]},
+    {"id": "board", "label": "HighScoreBoard", "kind": "class", "row": 1, "col": 2,
+      "attributes": [{"name": "scores", "type": "tuple"}],
+      "methods": [{"name": "submit", "visibility": "public"}]}
+  ],
+  "relationships": [
+    {"from": "reward", "to": "result", "kind": "dependency", "label": "读取"},
+    {"from": "reward", "to": "profile", "kind": "dependency", "label": "加分"},
+    {"from": "reward", "to": "board", "kind": "dependency", "label": "提交"}
+  ]
+}

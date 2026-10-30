@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "2f09356d-c097-4aa6-a5c4-1ad26fd10a1e",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
+  "specification": {
+    "sha256": "4a03e489b173537fde0b9e4cfdc2c4f963448a4c0f83a567a0e22271eb51bdb8",
+    "bytes": 2636
+  },
+  "artifact": {
+    "sha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
+    "bytes": 551036
+  },
+  "explainer": {
+    "preparedSha256": "e2e84aca79ab2256ba5977336d4e6d3a747c1e40b1bf5be7bd5dae555eb7d28f",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "profile",
+        "path": "progression/domain/aggregates/player_profile.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "d108cfa25392fdf28152d8a391c2654ef66ce03b9c80ebead441fb66b1ba987b",
+        "bytes": 1715
+      },
+      {
+        "kind": "repository",
+        "id": "board",
+        "path": "progression/domain/aggregates/high_score_board.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "565d558d5fc93c1c62eec144afde43fafcd723259383388114f1ed8011813a70",
+        "bytes": 1148
+      },
+      {
+        "kind": "repository",
+        "id": "reward",
+        "path": "progression/domain/services/reward.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "4807386363d123a6aae11efa0b7da42af8b4c2bad77d82fd4d68f17ae050f980",
+        "bytes": 1191
+      },
+      {
+        "kind": "repository",
+        "id": "rules",
+        "path": "progression/domain/rules.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "0cb38423e671ba2a0711e9ba19e68ae42f9f63d65552f979f9158fc18a94ba60",
+        "bytes": 169
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "growth-types",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/progression-types.class.json",
+        "relativePath": "diagrams/progression-types.class.json",
+        "sha256": "1863da31d432a651f4f496e6d56971b069dff8f125411fcc32d857b72802cf66",
+        "bytes": 1441
+      }
+    ]
+  }
+}

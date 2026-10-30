@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "diagram_type": "class",
+  "meta": {"title": "一局游戏里的对象"},
+  "layout": {"mode": "grid"},
+  "types": [
+    {"id": "root", "label": "AggregateRoot", "kind": "class", "sublabel": "记下事件", "row": 0, "col": 1},
+    {"id": "game", "label": "Game", "kind": "class", "sublabel": "聚合根", "row": 1, "col": 1,
+      "methods": [
+        {"name": "move", "visibility": "public"},
+        {"name": "fire", "visibility": "public"},
+        {"name": "tick", "visibility": "public"}
+      ]},
+    {"id": "tank", "label": "Tank", "kind": "class", "row": 2, "col": 0,
+      "attributes": [
+        {"name": "lives", "type": "int"},
+        {"name": "position", "type": "Position"}
+      ]},
+    {"id": "bullet", "label": "Bullet", "kind": "class", "row": 2, "col": 1,
+      "attributes": [{"name": "alive", "type": "bool"}]},
+    {"id": "field", "label": "Battlefield", "kind": "class", "row": 2, "col": 2,
+      "attributes": [{"name": "base_destroyed", "type": "bool"}]},
+    {"id": "hits", "label": "CollisionService", "kind": "class", "row": 3, "col": 1,
+      "methods": [{"name": "resolve", "visibility": "public"}]}
+  ],
+  "relationships": [
+    {"from": "game", "to": "root", "kind": "inheritance"},
+    {"from": "game", "to": "tank", "kind": "composition", "label": "持有"},
+    {"from": "game", "to": "bullet", "kind": "composition", "label": "持有"},
+    {"from": "game", "to": "field", "kind": "composition", "label": "持有"},
+    {"from": "game", "to": "hits", "kind": "composition", "label": "调用"}
+  ]
+}

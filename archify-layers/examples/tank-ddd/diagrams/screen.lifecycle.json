@@ -1,0 +1,19 @@
+{
+  "schema_version": 3,
+  "diagram_type": "lifecycle",
+  "meta": {"title": "会话画面"},
+  "mainPath": ["menu", "playing", "over"],
+  "states": [
+    {"id": "menu", "type": "start", "label": "菜单"},
+    {"id": "playing", "type": "active", "label": "进行"},
+    {"id": "paused", "type": "waiting", "label": "暂停"},
+    {"id": "over", "type": "neutral", "label": "结束"}
+  ],
+  "transitions": [
+    {"from": "menu", "to": "playing", "label": "开始"},
+    {"from": "playing", "to": "over", "label": "一局结束"},
+    {"from": "over", "to": "playing", "label": "再开始"},
+    {"from": "playing", "to": "paused", "label": "暂停"},
+    {"from": "paused", "to": "playing", "label": "继续"}
+  ]
+}

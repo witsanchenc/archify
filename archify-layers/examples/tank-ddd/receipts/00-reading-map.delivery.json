@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "c924d0fc-767b-4a22-93c5-6c0e4e030bfc",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/00-reading-map.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/00-reading-map.html",
+  "specification": {
+    "sha256": "7acd13f6c743caf0e2580ad5e2869bc3ded5896843cc6e5679ccb6209a08d722",
+    "bytes": 2592
+  },
+  "artifact": {
+    "sha256": "95f727507d198e791c19602f35c638e133a23a64e7fa78d7e494cdc128c62d6f",
+    "bytes": 565165
+  },
+  "explainer": {
+    "preparedSha256": "9d3add74da12915bc38c62f2e1eafb955f26b1afb561948c5a15580aec5fd371",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "readme",
+        "path": "README.md",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "fc5c02d12bee0622a2ed3b716a7a162b80f375df1fa70eeb754c76ce6e7121d0",
+        "bytes": 9118
+      },
+      {
+        "kind": "repository",
+        "id": "arch",
+        "path": "tests/test_architecture.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "7232468cc4da56a81b4b58f87e58407ca0a685903f2f965e54b7fb2cea2eefdb",
+        "bytes": 2821
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "zoom-line",
+        "inline": true,
+        "sha256": "99ff1b603d7ad77ca4721f3b04ccb1fffbffe421afcb47b8f2bfe72499f8bbe5",
+        "bytes": 515
+      }
+    ]
+  }
+}

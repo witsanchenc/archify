@@ -95,6 +95,10 @@ while the mean barely moved. What is the likely cause, and how should we investi
 
 Live examples: [First HTTPS visit](https://archify.si/cases/explainer/tls-first-visit.html) · [P99 latency (Chinese)](https://archify.si/cases/explainer/p99-tail-latency.html) · [How Archify finalize keeps the last good file, read from this repository (Chinese)](https://archify.si/cases/explainer/finalize-delivery.html) · [First rental checklist (Chinese)](https://archify.si/cases/explainer/first-rental.html)
 
+## Read a repository level by level
+
+[archify-layers](archify-layers/SKILL.md) sits next to the `archify` skill and does not change how a single diagram is drawn. It turns a codebase into a Chinese reading guide: one page per zoom level, from the system boundary down to classes, plus a cross-cutting page and a mechanisms page. Each page is an Archify explainer. The checked tank-game sample starts at [the reading map](archify-layers/examples/tank-ddd/00-reading-map.html).
+
 <a id="sponsors"></a>
 
 ## ❤️ Sponsors

@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "diagram_type": "lifecycle",
+  "meta": {"title": "Game 的胜负"},
+  "mainPath": ["playing", "won"],
+  "states": [
+    {"id": "playing", "type": "start", "label": "对战中"},
+    {"id": "won", "type": "success", "label": "胜利"},
+    {"id": "lost", "type": "failure", "label": "失败"}
+  ],
+  "transitions": [
+    {"from": "playing", "to": "won", "label": "敌人清空"},
+    {"from": "playing", "to": "lost", "label": "基地毁或没命"}
+  ]
+}

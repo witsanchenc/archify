@@ -95,6 +95,10 @@ API 优先读取 Redis，缓存未命中时查询 PostgreSQL 并回填缓存。
 
 在线示例：[P99 延迟排查](https://archify.si/cases/explainer/p99-tail-latency.html) · [读 Archify 仓库：finalize 怎么保住旧产物](https://archify.si/cases/explainer/finalize-delivery.html) · [第一次租房要确认什么](https://archify.si/cases/explainer/first-rental.html) · [第一次打开 HTTPS 网站（英文）](https://archify.si/cases/explainer/tls-first-visit.html)
 
+## 按层读一个代码库
+
+[archify-layers](archify-layers/SKILL.md) 放在 `archify` 技能旁边，不改变单张图的画法。它把代码库写成中文阅读指南：从系统边界一层层放大到类，另有横切页和机制页。每一页都是 Archify explainer。坦克大战样例从[阅读地图](archify-layers/examples/tank-ddd/00-reading-map.html)进入。
+
 <a id="sponsors"></a>
 
 ## ❤️ 赞助伙伴

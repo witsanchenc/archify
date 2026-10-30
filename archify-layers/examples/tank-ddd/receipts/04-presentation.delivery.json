@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "03afe0e4-cdd1-44a5-b647-aa57884552be",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/04-presentation.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/04-presentation.html",
+  "specification": {
+    "sha256": "a0c9daa0a702904e7fe087332a9a97a32f25ec4c4e3abe182c5c05e66ac28dbd",
+    "bytes": 2723
+  },
+  "artifact": {
+    "sha256": "7589a1e58d7bdc50406b76851d3e2004b6ae73c499a7bda8943eba38b2de417f",
+    "bytes": 896666
+  },
+  "explainer": {
+    "preparedSha256": "d04bb79bdf8833121bbb55f2d400dfbd1ede3b96c07765ecd79e4dbce9c3764e",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "keys",
+        "path": "presentation/keyboard.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "c942e35f7c3c742be9f11140dcfc8c620f86e504060432302ecbca4a8a7cb7b7",
+        "bytes": 584
+      },
+      {
+        "kind": "repository",
+        "id": "view",
+        "path": "presentation/renderer.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "1a07620ddeee42ecc96367c40d923b90d9b31ea768fa32ed97794e0be5b78cc4",
+        "bytes": 5094
+      },
+      {
+        "kind": "repository",
+        "id": "main",
+        "path": "presentation/main.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "e59202d735c92c056f941e9a94fe39324bcdda9489b318a21c8e9ccf8a476d24",
+        "bytes": 2714
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "ui-parts",
+        "inline": true,
+        "sha256": "1326ae5ef375b1cf66a3f7bd930aa59e0123820d94ef25ea74df4172af71db5c",
+        "bytes": 602
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "key-path",
+        "inline": true,
+        "sha256": "05d36844655e5cab4c59adb69145d2816ec7781a286c6ca984665d11cddffaa6",
+        "bytes": 604
+      }
+    ]
+  }
+}

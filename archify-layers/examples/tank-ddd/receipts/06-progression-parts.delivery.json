@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "31de1930-0c5f-42b2-8be5-ea584298b0a4",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/06-progression-parts.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/06-progression-parts.html",
+  "specification": {
+    "sha256": "1f1fa0920ed3c73d97d0ad48e55a6b520cbaacd0b7fb6de878b8c7737b3c0f5a",
+    "bytes": 2809
+  },
+  "artifact": {
+    "sha256": "c6b79ff24ca8c0ea3d7b9f4b16005453c9f8c36d1775dddce55ced92e6231de1",
+    "bytes": 907052
+  },
+  "explainer": {
+    "preparedSha256": "1e3fc401784510771b6f483697d6631b6e0a346109944088065c415c1fe394e7",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "service",
+        "path": "progression/application/progression_service.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "fb91b72b0f164be05f08c94344b03e38ea02887598fedc2c0bd6ff4e83527cc2",
+        "bytes": 1711
+      },
+      {
+        "kind": "repository",
+        "id": "reward",
+        "path": "progression/domain/services/reward.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "4807386363d123a6aae11efa0b7da42af8b4c2bad77d82fd4d68f17ae050f980",
+        "bytes": 1191
+      },
+      {
+        "kind": "repository",
+        "id": "listener",
+        "path": "progression/integration/battle_listener.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "d743d3541432ec9949d2d57f35d22ebac22f359debc7d6d1488d1fa901e6bf5e",
+        "bytes": 1129
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "growth-deps",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/progression-parts.class.json",
+        "relativePath": "diagrams/progression-parts.class.json",
+        "sha256": "6a05919d93a57ba87eeb9d8cc70ceb8a57797b50c9a0607c100118722d50b737",
+        "bytes": 1175
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "record-path",
+        "inline": true,
+        "sha256": "0fd3a7507808c03ee0ef173d9fcef9b191241ed8ebc3d7cb89a32858075dc81b",
+        "bytes": 847
+      }
+    ]
+  }
+}
