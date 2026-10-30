@@ -19,3 +19,18 @@ Install, update, reinstall, or remove a live Archify installation only when the 
 - Use the canonical remote source by default. Use a local source only when requested, from a durable checkout; live symlinks must not point into temporary directories or disposable worktrees.
 - Preserve unrelated files and existing unmanaged destinations. Report a destination conflict before replacing it unless that exact replacement is already explicitly authorized; use the installer's documented conflict handling within the approved scope.
 - Report the action, source, targets, and result, including skipped or failed destinations. A partial installation is not a complete success.
+
+## Cursor Cloud specific instructions
+
+The default image already provides Node 22.23 with bundled zlib `1.3.1-e00f703` (the ZIP toolchain in [CONTRIBUTING](CONTRIBUTING.md#packages-and-generated-artifacts)) and Chrome at `/usr/bin/google-chrome`. Keep that Node; the website requires Node >= 22.12 even though the Skill runtime allows Node >= 18.
+
+Install every lockfile before tests or the website. Root and `archify/` are the product; `website/` is the separate Astro site:
+
+```sh
+npm ci && npm --prefix archify ci && npm --prefix website ci
+```
+
+- Product smoke is `npm test`. Render the sample diagram with `node archify/bin/archify.mjs demo <directory>`, then open `archify-demo.html`.
+- Website commands run in `website/`: `npm run check`, `npm run build`, `npm test`, and `npm run dev`. Dev serves `http://127.0.0.1:4321/archify/`; the `/archify` base is required. On boot, `start` launches that server when `http://127.0.0.1:4321/archify/` is not already responding.
+- Astro dev may log that `assets/site-language.js` could not be resolved during its dependency scan. The staged file is still served, and Guide, Proof Lab, and the homepage load.
+- Browser gates need `ARCHIFY_CHROME=/usr/bin/google-chrome`. Website browser tests also need `ARCHIFY_SITE_INTEGRATION=1` and `ARCHIFY_SITE_ROOT` set to the built `website/dist` (see [website/README.md](website/README.md)).
