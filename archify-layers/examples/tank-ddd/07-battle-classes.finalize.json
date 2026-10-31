@@ -1,0 +1,646 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-31T02:01:43.370Z",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+    "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
+    "bytes": 3734
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+    "sha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+    "bytes": 1299372
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
+          "bytes": 3734
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 892,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "b5e23a23-605c-440b-89c9-5d7873a655d1",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+        "output": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+        "explainer": {
+          "preparedSha256": "28054c7311c23cbf158f6c20efe4061498aa074b9f33ab96a542bb9b8e1e581e",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "game",
+              "path": "battle/domain/aggregates/game.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "ea398f8ab7cdc9da6dee492f573117bb1016ebbe116e71a7b0d849de52754f2c",
+              "bytes": 3735
+            },
+            {
+              "kind": "repository",
+              "id": "tank",
+              "path": "battle/domain/entities/tank.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "7d22cb9f3a5176ff86fb4a1177281018153a0417a657d5056ecb1e981b336422",
+              "bytes": 1901
+            },
+            {
+              "kind": "repository",
+              "id": "tile",
+              "path": "battle/domain/value_objects/tile.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "97a98d2a12d6cddd1ab86049a139bd997b68d0c4ba6a6856a48bb09dee090851",
+              "bytes": 600
+            },
+            {
+              "kind": "repository",
+              "id": "rules",
+              "path": "battle/domain/rules.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "f7743081fb8fd021b905e0f9542cdad7c629f897d35c8b1da31a13a4055d9593",
+              "bytes": 620
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "aggregate",
+              "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/battle-aggregate.class.json",
+              "relativePath": "diagrams/battle-aggregate.class.json",
+              "sha256": "c88cb2b0fe522fb85eff3815430030b1346786222b8222636bc181debd3b8315",
+              "bytes": 1564
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "game-status",
+              "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/game-status.lifecycle.json",
+              "relativePath": "diagrams/game-status.lifecycle.json",
+              "sha256": "db8701defb3afb9bc04fbafd5d8c354bd010890d8336d9d34325464111cb7385",
+              "bytes": 481
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "screen-status",
+              "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/screen.lifecycle.json",
+              "relativePath": "diagrams/screen.lifecycle.json",
+              "sha256": "2784ccc64efab31b6a8ab927555aa274a89bdbeec3d94bd354d201dab5b3002a",
+              "bytes": 715
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
+          "bytes": 3734
+        },
+        "artifact": {
+          "sha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+          "bytes": 1299372
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 397,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "check",
+        "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+          "bytes": 1299372
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "86 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "7 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "aggregate: pass",
+              "game-status: pass",
+              "screen-status: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "aggregate",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-78dvKm/child.html",
+                "artifact": {
+                  "sha256": "15d87850beec18521aa9541d8569bd92b957e91bd45f63f4156282d4ff18e2fb",
+                  "bytes": 837914
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 9.5,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 84,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": null,
+                      "from": "game",
+                      "to": "tank"
+                    },
+                    "minimumSourceTextPx": 9.5,
+                    "minimumProjectedTextPx": 9.5,
+                    "semanticTextCount": 26
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "game-status",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-kiAu3q/child.html",
+                "artifact": {
+                  "sha256": "835375cf780d6f4bf3eac9c884feaed5b756a1bec30ebfc876865c98715169b5",
+                  "bytes": 824443
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 91.3,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 10,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 86,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": null,
+                      "from": "playing",
+                      "to": "won"
+                    },
+                    "minimumSourceTextPx": 10,
+                    "minimumProjectedTextPx": 10,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "screen-status",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-LPUuoz/child.html",
+                "artifact": {
+                  "sha256": "8e9ce21dbe34c07c3d5a4984307e5d3f7a8267c49a37e4db971dd15d7a928e39",
+                  "bytes": 827519
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 32,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 10,
+                    "maxBends": 2,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1.265,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 30,
+                    "minInteriorSegmentPx": 226,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": null,
+                      "from": "menu",
+                      "to": "playing"
+                    },
+                    "minimumSourceTextPx": 10,
+                    "minimumProjectedTextPx": 10,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "b5e23a23-605c-440b-89c9-5d7873a655d1"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-31T02:01:44.718Z",
+  "durationMs": 1348,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

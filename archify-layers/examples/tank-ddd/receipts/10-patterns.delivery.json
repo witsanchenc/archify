@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "43614349-57ac-4562-85b9-0b2dbbc4fdcc",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/10-patterns.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/10-patterns.html",
+  "specification": {
+    "sha256": "832fd9124d5f75c689bac567f2bdf8adc4fcf31f56f104b3c8ad3da9f6ccbfce",
+    "bytes": 3711
+  },
+  "artifact": {
+    "sha256": "8871c4e552527faf6524707e1346af67c36edabd6a5dfd805d1ba12a08c732d9",
+    "bytes": 176566
+  },
+  "explainer": {
+    "preparedSha256": "bd4fc2fc4a5e2b98b79c22b012eda0312a8e8308d2e0b5670f011367ab5093e7",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "contract",
+        "path": "battle/contract/events.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "c4da7bfc4fbf6ab711cd45029da13fc877d359ff50b61d477f43b79648cfc776",
+        "bytes": 716
+      },
+      {
+        "kind": "repository",
+        "id": "listener",
+        "path": "progression/integration/battle_listener.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "d743d3541432ec9949d2d57f35d22ebac22f359debc7d6d1488d1fa901e6bf5e",
+        "bytes": 1129
+      },
+      {
+        "kind": "repository",
+        "id": "reward",
+        "path": "progression/domain/services/reward.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "4807386363d123a6aae11efa0b7da42af8b4c2bad77d82fd4d68f17ae050f980",
+        "bytes": 1191
+      },
+      {
+        "kind": "repository",
+        "id": "collision",
+        "path": "battle/domain/services/collision.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "86f0d3f3350797614a2f5db11d280307293434fd68c54bd0cb1474d583159254",
+        "bytes": 1653
+      }
+    ]
+  }
+}

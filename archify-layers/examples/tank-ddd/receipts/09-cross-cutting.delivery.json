@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "0af82864-6464-4410-85f5-c3f29e903f29",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+  "specification": {
+    "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
+    "bytes": 3370
+  },
+  "artifact": {
+    "sha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+    "bytes": 548665
+  },
+  "explainer": {
+    "preparedSha256": "8ab1a9983034323ba023a044e48858f60e63bf3f14140c92c4102ebaa42ca233",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "root",
+        "path": "shared/aggregate_root.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "3a8241a58d9ded5e7abfcdd178fbdb522e467772fccbc3dc1f156620cc40711c",
+        "bytes": 691
+      },
+      {
+        "kind": "repository",
+        "id": "event",
+        "path": "shared/domain_event.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "840e81e17528445989fe9ac38f8161dfba7fc914e4c14f9782be7536d527314c",
+        "bytes": 451
+      },
+      {
+        "kind": "repository",
+        "id": "main",
+        "path": "presentation/main.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "e59202d735c92c056f941e9a94fe39324bcdda9489b318a21c8e9ccf8a476d24",
+        "bytes": 2714
+      },
+      {
+        "kind": "repository",
+        "id": "order",
+        "path": "tests/test_shared.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "01f3f8a9d5479a791f3de147f634b74992b4274a4b8ec1cdda1f7d5208252711",
+        "bytes": 1198
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "shared-types",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/shared.class.json",
+        "relativePath": "diagrams/shared.class.json",
+        "sha256": "138571b3b5f498650c02f3714dccc3f66df365979c398e06cf96af6c62add115",
+        "bytes": 883
+      }
+    ]
+  }
+}

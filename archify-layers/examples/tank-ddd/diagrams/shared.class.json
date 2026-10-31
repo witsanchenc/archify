@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "diagram_type": "class",
+  "meta": {"title": "共享内核"},
+  "layout": {"mode": "grid"},
+  "types": [
+    {"id": "event", "label": "DomainEvent", "kind": "record", "sublabel": "冻结的数据", "row": 0, "col": 1},
+    {"id": "root", "label": "AggregateRoot", "kind": "class", "row": 1, "col": 0,
+      "methods": [
+        {"name": "_record", "visibility": "protected"},
+        {"name": "pull_events", "visibility": "public"}
+      ]},
+    {"id": "bus", "label": "EventDispatcher", "kind": "class", "row": 1, "col": 2,
+      "methods": [
+        {"name": "subscribe", "visibility": "public"},
+        {"name": "publish", "visibility": "public"}
+      ]}
+  ],
+  "relationships": [
+    {"from": "root", "to": "event", "kind": "composition", "label": "暂存"},
+    {"from": "bus", "to": "event", "kind": "dependency", "label": "按类型分发"}
+  ]
+}

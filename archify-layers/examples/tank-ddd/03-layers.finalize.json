@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-31T02:01:36.420Z",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
+    "sha256": "ada2d80309aa32a2e652c53d6f4024b948166f9b852cfa5b101a548ee2d340cb",
+    "bytes": 2572
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+    "sha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
+    "bytes": 904214
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "ada2d80309aa32a2e652c53d6f4024b948166f9b852cfa5b101a548ee2d340cb",
+          "bytes": 2572
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 687,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "211e1818-6270-41da-80f0-e3dde80d49c2",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
+        "output": "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+        "explainer": {
+          "preparedSha256": "38260071da2246ae46fa9ff39e4451f071994edd2199edc7e792f8a1474529ec",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "arch",
+              "path": "tests/test_architecture.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "7232468cc4da56a81b4b58f87e58407ca0a685903f2f965e54b7fb2cea2eefdb",
+              "bytes": 2821
+            },
+            {
+              "kind": "repository",
+              "id": "saves",
+              "path": "battle/domain/repositories/save_repository.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "87e78acc2200b7fb849c548a122f6c2543c91eaceacd81ac24bb61e9de087109",
+              "bytes": 522
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "battle-layers",
+              "inline": true,
+              "sha256": "cd69756232fe69bbc4d19634467273ba977cfd09f4db8bc4c48548e48d4b031d",
+              "bytes": 615
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "growth-layers",
+              "inline": true,
+              "sha256": "240bff49d7c020e08591254b75d854a9363c342c4e9f7409654f5e1201bfc9e0",
+              "bytes": 745
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "ada2d80309aa32a2e652c53d6f4024b948166f9b852cfa5b101a548ee2d340cb",
+          "bytes": 2572
+        },
+        "artifact": {
+          "sha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
+          "bytes": 904214
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 328,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "check",
+        "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
+          "bytes": 904214
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "54 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "4 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "battle-layers: pass",
+              "growth-layers: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "battle-layers",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-VM0pno/child.html",
+                "artifact": {
+                  "sha256": "6177afd663448e769fb5233ac78c91de522a0846270bbc97fc82fd66875e9b87",
+                  "bytes": 827063
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 88,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 1,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 142,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": true,
+                    "emptyTopPx": 80,
+                    "emptyTopRatio": 0.203,
+                    "occupiedTop": 80,
+                    "viewBoxTop": 0,
+                    "canvasHeight": 394,
+                    "typicalNodeHeight": 60,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "app-to-domain-1",
+                      "from": "app",
+                      "to": "domain"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "growth-layers",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-BRrU18/child.html",
+                "artifact": {
+                  "sha256": "0a3d013b7483cea12bddd2af61b7096da600b6852429e403bd8a23a8ab84f6f2",
+                  "bytes": 829383
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 88,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 1,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 142,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": true,
+                    "emptyTopPx": 80,
+                    "emptyTopRatio": 0.203,
+                    "occupiedTop": 80,
+                    "viewBoxTop": 0,
+                    "canvasHeight": 394,
+                    "typicalNodeHeight": 60,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "actualReaderWidth": 960,
+                    "desiredReaderWidth": 960,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "acl-to-app-1",
+                      "from": "acl",
+                      "to": "app"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "211e1818-6270-41da-80f0-e3dde80d49c2"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/03-layers.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/03-layers.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-31T02:01:37.495Z",
+  "durationMs": 1075,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

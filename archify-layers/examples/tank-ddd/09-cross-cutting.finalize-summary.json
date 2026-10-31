@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
+    "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
+    "bytes": 3370
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
+    "sha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+    "bytes": 548665
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 722,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

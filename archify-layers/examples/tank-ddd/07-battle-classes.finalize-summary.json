@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+    "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
+    "bytes": 3734
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+    "sha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+    "bytes": 1299372
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1348,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

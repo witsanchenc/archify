@@ -1,0 +1,289 @@
+{
+  "ok": true,
+  "note": "Delivery receipts bind the HTML from finalize, before navigation was inserted. They are moved aside so a later check validates the linked pages instead of failing a stale hash. unlinkedNodes are boxes left non-clickable on purpose: they have no deeper page.",
+  "pages": [
+    {
+      "file": "00-reading-map.html",
+      "preLinkSha256": "95f727507d198e791c19602f35c638e133a23a64e7fa78d7e494cdc128c62d6f",
+      "postLinkSha256": "6a06f7e1cd164b03c566591ba5ae51dfc7e8394854e96dd4a1b8a9c480ff684e"
+    },
+    {
+      "file": "01-system.html",
+      "preLinkSha256": "027cd916bf7ed7a1748b1fed3a9db03bb22a86c1f47cd8ff8f8bc108f44a57f0",
+      "postLinkSha256": "65e25d36fa965076a0c982590a3d95ee437ef66bedd68902d8c65d3830150d14"
+    },
+    {
+      "file": "02-contexts.html",
+      "preLinkSha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
+      "postLinkSha256": "956c9fa0f1ad914dc143f88610d984293e5863f21f3f349e593ad5658c1a7386"
+    },
+    {
+      "file": "03-layers.html",
+      "preLinkSha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
+      "postLinkSha256": "579966731e5d3615edc67e4c9312389345d1e6114bae58f6704a5e908960fd5a"
+    },
+    {
+      "file": "04-presentation.html",
+      "preLinkSha256": "7589a1e58d7bdc50406b76851d3e2004b6ae73c499a7bda8943eba38b2de417f",
+      "postLinkSha256": "cf25bc7be1882a8c92d9d338effd05a70286e88feb0ce7a503871b4b4bb0e52e"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "preLinkSha256": "285a6d3387858212ae88d507e6ef66e00987add6069a023d6365500d8b268a2b",
+      "postLinkSha256": "d99599a8248621662b81b43ed033f231f4be3bd7b544240910f92c47c6466bff"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "preLinkSha256": "c6b79ff24ca8c0ea3d7b9f4b16005453c9f8c36d1775dddce55ced92e6231de1",
+      "postLinkSha256": "ebcf9c5c9a97a439938a5502365f1f88a32b9506d601453ad022131a1cb3c376"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "preLinkSha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+      "postLinkSha256": "4c61376c036666bf7cc4b58e016b8c11d56530d32eecbcf3b676fac7cae405d5"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "preLinkSha256": "03b55137861b3abec85e41329363013f5f1337cf617346a156a60b5f972338ac",
+      "postLinkSha256": "a50b099739bd6cdcebdc6d0bc9b628a0fcaef3dc0fa0e499b641fc0156189517"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "preLinkSha256": "194e4ee5428590a2d808e361c86076c321268eea1b381d6c2bddcda2d702b8b7",
+      "postLinkSha256": "c9324dfc178c66c42294f337b705fdb9f47f012a26dda285d60fa03c23d73706"
+    },
+    {
+      "file": "10-patterns.html",
+      "preLinkSha256": "8871c4e552527faf6524707e1346af67c36edabd6a5dfd805d1ba12a08c732d9",
+      "postLinkSha256": "f5f5a98b5d3af351db017c7014d259fcba6086ee5ed71928a4727e06acbb985f"
+    }
+  ],
+  "nodeLinks": 31,
+  "unlinkedNodes": [
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "map"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "parts"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "classes"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "player"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "window"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "player"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "bus"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "finish-path",
+      "node": "bus"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "context-map",
+      "node": "bus"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "keys"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "main"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "view"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "keys"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "main"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "ui-parts",
+      "node": "view"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "ai"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "events"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "saves"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "json"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "ai"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "listener"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "service"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "store"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "listener"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "service"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "menu"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "playing"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "paused"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "screen-status",
+      "node": "over"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "playing"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "won"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "game-status",
+      "node": "lost"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "root"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "game"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "tank"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "bullet"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "field"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "diagram": "aggregate",
+      "node": "hits"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "reward"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "result"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "profile"
+    },
+    {
+      "file": "08-progression-classes.html",
+      "diagram": "growth-types",
+      "node": "board"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "event"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "root"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "diagram": "shared-types",
+      "node": "bus"
+    }
+  ]
+}

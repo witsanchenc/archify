@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "211e1818-6270-41da-80f0-e3dde80d49c2",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
+  "specification": {
+    "sha256": "ada2d80309aa32a2e652c53d6f4024b948166f9b852cfa5b101a548ee2d340cb",
+    "bytes": 2572
+  },
+  "artifact": {
+    "sha256": "10a465bab3578613168938af2b364db1f085930cb228283fdbc9f371ef9feb28",
+    "bytes": 904214
+  },
+  "explainer": {
+    "preparedSha256": "38260071da2246ae46fa9ff39e4451f071994edd2199edc7e792f8a1474529ec",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "arch",
+        "path": "tests/test_architecture.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "7232468cc4da56a81b4b58f87e58407ca0a685903f2f965e54b7fb2cea2eefdb",
+        "bytes": 2821
+      },
+      {
+        "kind": "repository",
+        "id": "saves",
+        "path": "battle/domain/repositories/save_repository.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "87e78acc2200b7fb849c548a122f6c2543c91eaceacd81ac24bb61e9de087109",
+        "bytes": 522
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "battle-layers",
+        "inline": true,
+        "sha256": "cd69756232fe69bbc4d19634467273ba977cfd09f4db8bc4c48548e48d4b031d",
+        "bytes": 615
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "growth-layers",
+        "inline": true,
+        "sha256": "240bff49d7c020e08591254b75d854a9363c342c4e9f7409654f5e1201bfc9e0",
+        "bytes": 745
+      }
+    ]
+  }
+}

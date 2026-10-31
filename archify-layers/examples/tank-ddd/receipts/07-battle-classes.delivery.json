@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b5e23a23-605c-440b-89c9-5d7873a655d1",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
+  "specification": {
+    "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
+    "bytes": 3734
+  },
+  "artifact": {
+    "sha256": "ff310166772bab5da7db4ba826414a2bfc3f4f3c8f500a7f30df6d2128964990",
+    "bytes": 1299372
+  },
+  "explainer": {
+    "preparedSha256": "28054c7311c23cbf158f6c20efe4061498aa074b9f33ab96a542bb9b8e1e581e",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "game",
+        "path": "battle/domain/aggregates/game.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "ea398f8ab7cdc9da6dee492f573117bb1016ebbe116e71a7b0d849de52754f2c",
+        "bytes": 3735
+      },
+      {
+        "kind": "repository",
+        "id": "tank",
+        "path": "battle/domain/entities/tank.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "7d22cb9f3a5176ff86fb4a1177281018153a0417a657d5056ecb1e981b336422",
+        "bytes": 1901
+      },
+      {
+        "kind": "repository",
+        "id": "tile",
+        "path": "battle/domain/value_objects/tile.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "97a98d2a12d6cddd1ab86049a139bd997b68d0c4ba6a6856a48bb09dee090851",
+        "bytes": 600
+      },
+      {
+        "kind": "repository",
+        "id": "rules",
+        "path": "battle/domain/rules.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "f7743081fb8fd021b905e0f9542cdad7c629f897d35c8b1da31a13a4055d9593",
+        "bytes": 620
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "aggregate",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/battle-aggregate.class.json",
+        "relativePath": "diagrams/battle-aggregate.class.json",
+        "sha256": "c88cb2b0fe522fb85eff3815430030b1346786222b8222636bc181debd3b8315",
+        "bytes": 1564
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "game-status",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/game-status.lifecycle.json",
+        "relativePath": "diagrams/game-status.lifecycle.json",
+        "sha256": "db8701defb3afb9bc04fbafd5d8c354bd010890d8336d9d34325464111cb7385",
+        "bytes": 481
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "screen-status",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/screen.lifecycle.json",
+        "relativePath": "diagrams/screen.lifecycle.json",
+        "sha256": "2784ccc64efab31b6a8ab927555aa274a89bdbeec3d94bd354d201dab5b3002a",
+        "bytes": 715
+      }
+    ]
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-31T02:01:34.771Z",
+  "specification": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
+    "sha256": "8e8b1a8270ef6e23fd071214ff23729a8b928d0fa93c7cc1991f44bf0e16905a",
+    "bytes": 2974
+  },
+  "artifact": {
+    "path": "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+    "sha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
+    "bytes": 916619
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "8e8b1a8270ef6e23fd071214ff23729a8b928d0fa93c7cc1991f44bf0e16905a",
+          "bytes": 2974
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 685,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
+        "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/tmp/tank-ddd",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "28ef42ca-37f8-4340-9483-5b71c98f2891",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/workspace/archify-layers/examples/tank-ddd/02-contexts.archify.md",
+        "output": "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+        "explainer": {
+          "preparedSha256": "b6fcf112dcaf52650d59169cc019e706fdad20a45842ca96043a8d1ec72abb7c",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "session",
+              "path": "battle/application/session.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "fb89f885897e3bb4940e7df7f3d7ce056c0968e0f71cb6e817bdef034088d63b",
+              "bytes": 3463
+            },
+            {
+              "kind": "repository",
+              "id": "listener",
+              "path": "progression/integration/battle_listener.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "d743d3541432ec9949d2d57f35d22ebac22f359debc7d6d1488d1fa901e6bf5e",
+              "bytes": 1129
+            },
+            {
+              "kind": "repository",
+              "id": "arch",
+              "path": "tests/test_architecture.py",
+              "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+              "sha256": "7232468cc4da56a81b4b58f87e58407ca0a685903f2f965e54b7fb2cea2eefdb",
+              "bytes": 2821
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "context-map",
+              "inline": true,
+              "sha256": "4e2f845f1db214d0f22615aee442e90a380be471b6595d756c6655e5c5324933",
+              "bytes": 861
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "finish-path",
+              "inline": true,
+              "sha256": "07092b534ca4e4bfea5de730de7efbe37ee47d8d9c38b7903c8e047514c7a270",
+              "bytes": 657
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "8e8b1a8270ef6e23fd071214ff23729a8b928d0fa93c7cc1991f44bf0e16905a",
+          "bytes": 2974
+        },
+        "artifact": {
+          "sha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
+          "bytes": 916619
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 308,
+      "command": [
+        "/exec-daemon/node",
+        "/workspace/archify/bin/archify.mjs",
+        "check",
+        "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/workspace/archify-layers/examples/tank-ddd/02-contexts.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "7a5df8297cf0234e3e784581c06b8949ccc2c6589a62a7a3d1b56e6a8e42f08c",
+          "bytes": 916619
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "55 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "5 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "context-map: pass",
+              "finish-path: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "context-map",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-8xPIlc/child.html",
+                "artifact": {
+                  "sha256": "9f404d0bfcd84df626f9bbe72110d6f278c1549c622aab75410f690bbb95335b",
+                  "bytes": 831911
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 2,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 4.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.5,
+                    "maxBends": 4,
+                    "routesOverSuggestedBends": 1,
+                    "maxStretch": 1.129,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 24,
+                    "minInteriorSegmentPx": 46,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [
+                      {
+                        "left": {
+                          "id": "bus-to-growth-1",
+                          "from": "bus",
+                          "to": "growth",
+                          "label": "结算",
+                          "collectionIndex": 2,
+                          "artifactIndex": 3
+                        },
+                        "right": {
+                          "id": "ui-to-growth-1",
+                          "from": "ui",
+                          "to": "growth",
+                          "label": "读档案",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "point": [
+                          844,
+                          103
+                        ],
+                        "sharedNode": "growth"
+                      },
+                      {
+                        "left": {
+                          "id": "ui-to-battle-1",
+                          "from": "ui",
+                          "to": "battle",
+                          "label": "发指令",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "right": {
+                          "id": "ui-to-growth-1",
+                          "from": "ui",
+                          "to": "growth",
+                          "label": "读档案",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "point": [
+                          213.60000000000002,
+                          96
+                        ],
+                        "sharedNode": "ui"
+                      }
+                    ],
+                    "detours": [
+                      {
+                        "relationship": {
+                          "id": "ui-to-growth-1",
+                          "from": "ui",
+                          "to": "growth",
+                          "label": "读档案",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "bends": 4,
+                        "stretch": 1.129,
+                        "directCorridorBlockers": [
+                          {
+                            "id": "battle",
+                            "label": "对战",
+                            "box": [
+                              316,
+                              80,
+                              120,
+                              60
+                            ]
+                          },
+                          {
+                            "id": "bus",
+                            "label": "事件总线",
+                            "box": [
+                              592,
+                              80,
+                              120,
+                              60
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "leadingSpace": {
+                    "measured": true,
+                    "emptyTopPx": 71,
+                    "emptyTopRatio": 0.306,
+                    "occupiedTop": 71,
+                    "viewBoxTop": 0,
+                    "canvasHeight": 232,
+                    "typicalNodeHeight": 60,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 963.75,
+                    "actualBudgetPx": 963.75,
+                    "actualReaderWidth": 993.75,
+                    "desiredReaderWidth": 993.75,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ui-to-bus-1",
+                      "from": "ui",
+                      "to": "bus"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.5,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "finish-path",
+              "receipt": {
+                "ok": true,
+                "file": "/tmp/archify-explainer-check-lenvx6/child.html",
+                "artifact": {
+                  "sha256": "6ff8a137c1e065362b3dae9a772224156118a1a76fdc95ed89378c38cf84511d",
+                  "bytes": 824335
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 80.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 200.3,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "sequenceColumnSpace": {
+                    "measured": true,
+                    "columnFit": "spread",
+                    "participantCount": 4,
+                    "occupiedRight": 880,
+                    "viewBoxLeft": 0,
+                    "canvasWidth": 920,
+                    "emptyRightPx": 40,
+                    "emptyRightRatio": 0.043,
+                    "typicalParticipantWidth": 175,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "session-to-bus-1",
+                      "from": "session",
+                      "to": "bus"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "28ef42ca-37f8-4340-9483-5b71c98f2891"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/workspace/archify-layers/examples/tank-ddd/02-contexts.finalize.json",
+    "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/02-contexts.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-31T02:01:35.827Z",
+  "durationMs": 1055,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

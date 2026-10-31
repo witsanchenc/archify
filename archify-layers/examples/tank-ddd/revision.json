@@ -1,0 +1,9 @@
+{
+  "subject": "tank DDD snapshot used by the archify-layers sample",
+  "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+  "origin": "https://localhost/local/tank-ddd.git",
+  "linkMode": "local-only",
+  "zipSha256": "395f3061b5b7590b63a8e412128e37d6a04d8d8c5c2dee9b9ea374d997469b1a",
+  "excludedFromPin": ["doc/"],
+  "tests": "python -m unittest: 55 passed at this revision"
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9df66394-c49c-43e4-b8f7-f4f2fc13659d",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.archify.md",
+  "output": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.html",
+  "specification": {
+    "sha256": "42469c6dd5c7024fc9988489427a0afdd7707f69973e92e85cdd3b5bb589a656",
+    "bytes": 2906
+  },
+  "artifact": {
+    "sha256": "285a6d3387858212ae88d507e6ef66e00987add6069a023d6365500d8b268a2b",
+    "bytes": 910975
+  },
+  "explainer": {
+    "preparedSha256": "dc3db483fbe2ff5b18fe8262640db893520601beb8e752ed98758320209ad2f7",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "session",
+        "path": "battle/application/session.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "fb89f885897e3bb4940e7df7f3d7ce056c0968e0f71cb6e817bdef034088d63b",
+        "bytes": 3463
+      },
+      {
+        "kind": "repository",
+        "id": "ai",
+        "path": "battle/application/enemy_ai.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "234c793a6d9b26a24c30c808ef4110e6cc610a3149aa0d4fd454867938941a1d",
+        "bytes": 572
+      },
+      {
+        "kind": "repository",
+        "id": "contract",
+        "path": "battle/contract/events.py",
+        "revision": "2ae47a6bb13f5905acea0e1c12f444b4ad441a4c",
+        "sha256": "c4da7bfc4fbf6ab711cd45029da13fc877d359ff50b61d477f43b79648cfc776",
+        "bytes": 716
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "battle-deps",
+        "path": "/workspace/archify-layers/examples/tank-ddd/diagrams/battle-parts.class.json",
+        "relativePath": "diagrams/battle-parts.class.json",
+        "sha256": "5d7771017466c2c41906f4f40d5c5c084899f1a3a98b931f045a54522ecd9aa3",
+        "bytes": 1123
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "tick-path",
+        "inline": true,
+        "sha256": "55eb553227406be962fa6b869e4dbd5cb482f92e8e74cbd9a2ef9c953475d72c",
+        "bytes": 796
+      }
+    ]
+  }
+}

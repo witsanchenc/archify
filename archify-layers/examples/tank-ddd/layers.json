@@ -1,0 +1,337 @@
+{
+  "title": "坦克大战分层阅读",
+  "pages": [
+    {
+      "id": "overview",
+      "file": "00-reading-map.html",
+      "title": "阅读地图",
+      "role": "overview",
+      "parent": null
+    },
+    {
+      "id": "system",
+      "file": "01-system.html",
+      "title": "整体系统",
+      "role": "level",
+      "parent": "overview"
+    },
+    {
+      "id": "contexts",
+      "file": "02-contexts.html",
+      "title": "限界上下文",
+      "role": "level",
+      "parent": "system"
+    },
+    {
+      "id": "layers",
+      "file": "03-layers.html",
+      "title": "内部分层",
+      "role": "level",
+      "parent": "contexts"
+    },
+    {
+      "id": "presentation",
+      "file": "04-presentation.html",
+      "title": "表现层对象",
+      "role": "level",
+      "parent": "contexts"
+    },
+    {
+      "id": "battle-parts",
+      "file": "05-battle-parts.html",
+      "title": "对战构件",
+      "role": "level",
+      "parent": "layers"
+    },
+    {
+      "id": "progression-parts",
+      "file": "06-progression-parts.html",
+      "title": "成长构件",
+      "role": "level",
+      "parent": "layers"
+    },
+    {
+      "id": "battle-classes",
+      "file": "07-battle-classes.html",
+      "title": "对战类",
+      "role": "level",
+      "parent": "battle-parts"
+    },
+    {
+      "id": "progression-classes",
+      "file": "08-progression-classes.html",
+      "title": "成长类",
+      "role": "level",
+      "parent": "progression-parts"
+    },
+    {
+      "id": "cross",
+      "file": "09-cross-cutting.html",
+      "title": "横切",
+      "role": "cross",
+      "parent": "overview"
+    },
+    {
+      "id": "patterns",
+      "file": "10-patterns.html",
+      "title": "机制",
+      "role": "patterns",
+      "parent": "overview"
+    }
+  ],
+  "drills": [
+    {
+      "file": "00-reading-map.html",
+      "text": "下钻：整体系统",
+      "href": "01-system.html"
+    },
+    {
+      "file": "00-reading-map.html",
+      "text": "下钻：横切",
+      "href": "09-cross-cutting.html"
+    },
+    {
+      "file": "00-reading-map.html",
+      "text": "下钻：机制",
+      "href": "10-patterns.html"
+    },
+    {
+      "file": "01-system.html",
+      "text": "下钻：限界上下文",
+      "href": "02-contexts.html"
+    },
+    {
+      "file": "01-system.html",
+      "text": "下钻：横切",
+      "href": "09-cross-cutting.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "text": "下钻：内部分层",
+      "href": "03-layers.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "text": "下钻：表现层对象",
+      "href": "04-presentation.html"
+    },
+    {
+      "file": "03-layers.html",
+      "text": "下钻：对战构件",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "text": "下钻：成长构件",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "text": "下钻：对战类",
+      "href": "07-battle-classes.html"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "text": "下钻：成长类",
+      "href": "08-progression-classes.html"
+    },
+    {
+      "file": "07-battle-classes.html",
+      "text": "下钻：机制",
+      "href": "10-patterns.html"
+    },
+    {
+      "file": "09-cross-cutting.html",
+      "text": "下钻：机制",
+      "href": "10-patterns.html"
+    }
+  ],
+  "nodes": [
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "system",
+      "href": "01-system.html"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "contexts",
+      "href": "02-contexts.html"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "layers",
+      "href": "03-layers.html"
+    },
+    {
+      "file": "00-reading-map.html",
+      "diagram": "zoom-line",
+      "node": "ui",
+      "href": "04-presentation.html"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "entry",
+      "href": "04-presentation.html"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "battle",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "system-context",
+      "node": "growth",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "entry",
+      "href": "04-presentation.html"
+    },
+    {
+      "file": "01-system.html",
+      "diagram": "one-frame",
+      "node": "battle",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "context-map",
+      "node": "ui",
+      "href": "04-presentation.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "context-map",
+      "node": "battle",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "context-map",
+      "node": "growth",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "finish-path",
+      "node": "session",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "finish-path",
+      "node": "listener",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "02-contexts.html",
+      "diagram": "finish-path",
+      "node": "growth",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "battle-layers",
+      "node": "app",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "battle-layers",
+      "node": "domain",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "battle-layers",
+      "node": "infra",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "growth-layers",
+      "node": "acl",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "growth-layers",
+      "node": "app",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "growth-layers",
+      "node": "domain",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "03-layers.html",
+      "diagram": "growth-layers",
+      "node": "infra",
+      "href": "06-progression-parts.html"
+    },
+    {
+      "file": "04-presentation.html",
+      "diagram": "key-path",
+      "node": "session",
+      "href": "05-battle-parts.html"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "session",
+      "href": "07-battle-classes.html"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "battle-deps",
+      "node": "game",
+      "href": "07-battle-classes.html"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "session",
+      "href": "07-battle-classes.html"
+    },
+    {
+      "file": "05-battle-parts.html",
+      "diagram": "tick-path",
+      "node": "game",
+      "href": "07-battle-classes.html"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "profile",
+      "href": "08-progression-classes.html"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "reward",
+      "href": "08-progression-classes.html"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "growth-deps",
+      "node": "board",
+      "href": "08-progression-classes.html"
+    },
+    {
+      "file": "06-progression-parts.html",
+      "diagram": "record-path",
+      "node": "reward",
+      "href": "08-progression-classes.html"
+    }
+  ]
+}
