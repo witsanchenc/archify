@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T09:26:50.898Z",
+  "startedAt": "2026-10-31T02:01:39.760Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.archify.md",
     "sha256": "42469c6dd5c7024fc9988489427a0afdd7707f69973e92e85cdd3b5bb589a656",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 673,
+      "durationMs": 699,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "b753a842-b4bc-4875-a9a7-ceb4a2c13d68",
+        "receiptId": "9df66394-c49c-43e4-b8f7-f4f2fc13659d",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.html",
         "explainer": {
-          "preparedSha256": "9996c25e96d9d6573c1d1c4b3c0efc4577fa61efb50e358453863946339abce9",
+          "preparedSha256": "dc3db483fbe2ff5b18fe8262640db893520601beb8e752ed98758320209ad2f7",
           "dependencies": [
             {
               "kind": "repository",
@@ -158,7 +158,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 294,
+      "durationMs": 304,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -217,7 +217,7 @@
               "id": "battle-deps",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-sF2mHw/child.html",
+                "file": "/tmp/archify-explainer-check-eXpQWj/child.html",
                 "artifact": {
                   "sha256": "5fbd60d324240a76928bd88be2058ecf063a78aa103d430ee5159d8d8669bb4c",
                   "bytes": 832241
@@ -347,7 +347,7 @@
               "id": "tick-path",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-RPEU3a/child.html",
+                "file": "/tmp/archify-explainer-check-8QQKZS/child.html",
                 "artifact": {
                   "sha256": "f9e478c98e44d71c3eeb021db66ccdbe42f2eaba826fd919377dd46e6921e748",
                   "bytes": 826076
@@ -486,7 +486,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "b753a842-b4bc-4875-a9a7-ceb4a2c13d68"
+        "deliveryReceiptId": "9df66394-c49c-43e4-b8f7-f4f2fc13659d"
       }
     }
   },
@@ -500,8 +500,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/05-battle-parts.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T09:26:51.920Z",
-  "durationMs": 1022,
+  "finishedAt": "2026-10-31T02:01:40.825Z",
+  "durationMs": 1065,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

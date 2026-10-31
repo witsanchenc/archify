@@ -32,7 +32,7 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "durationMs": 705,
+  "durationMs": 739,
   "browserCheck": {
     "requested": false,
     "ran": false

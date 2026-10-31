@@ -32,7 +32,7 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/03-layers.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "durationMs": 1001,
+  "durationMs": 1075,
   "browserCheck": {
     "requested": false,
     "ran": false

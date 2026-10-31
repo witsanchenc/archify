@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T09:26:47.792Z",
+  "startedAt": "2026-10-31T02:01:36.420Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
     "sha256": "ada2d80309aa32a2e652c53d6f4024b948166f9b852cfa5b101a548ee2d340cb",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 649,
+      "durationMs": 687,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "5ebc6776-a67b-4719-b382-a29abf72928f",
+        "receiptId": "211e1818-6270-41da-80f0-e3dde80d49c2",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/03-layers.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/03-layers.html",
         "explainer": {
-          "preparedSha256": "e49fcb468b517b07b2693858824a32199fb14d368c64ffdc9a338a35ad88d013",
+          "preparedSha256": "38260071da2246ae46fa9ff39e4451f071994edd2199edc7e792f8a1474529ec",
           "dependencies": [
             {
               "kind": "repository",
@@ -149,7 +149,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 297,
+      "durationMs": 328,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -208,7 +208,7 @@
               "id": "battle-layers",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-bGOyeD/child.html",
+                "file": "/tmp/archify-explainer-check-VM0pno/child.html",
                 "artifact": {
                   "sha256": "6177afd663448e769fb5233ac78c91de522a0846270bbc97fc82fd66875e9b87",
                   "bytes": 827063
@@ -341,7 +341,7 @@
               "id": "growth-layers",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-hDLqoy/child.html",
+                "file": "/tmp/archify-explainer-check-BRrU18/child.html",
                 "artifact": {
                   "sha256": "0a3d013b7483cea12bddd2af61b7096da600b6852429e403bd8a23a8ab84f6f2",
                   "bytes": 829383
@@ -477,7 +477,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "5ebc6776-a67b-4719-b382-a29abf72928f"
+        "deliveryReceiptId": "211e1818-6270-41da-80f0-e3dde80d49c2"
       }
     }
   },
@@ -491,8 +491,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/03-layers.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T09:26:48.794Z",
-  "durationMs": 1001,
+  "finishedAt": "2026-10-31T02:01:37.495Z",
+  "durationMs": 1075,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

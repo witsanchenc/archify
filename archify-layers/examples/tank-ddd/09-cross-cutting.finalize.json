@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T09:26:56.925Z",
+  "startedAt": "2026-10-31T02:01:46.220Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
     "sha256": "1121d13d8a4d65dfffaa2a66d44d46d8761b3a6149fed0567257c1b08a9e8999",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 472,
+      "durationMs": 465,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "d28f47f9-64b2-4391-8542-36d6b9c59f20",
+        "receiptId": "0af82864-6464-4410-85f5-c3f29e903f29",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.html",
         "explainer": {
-          "preparedSha256": "929d025e3b50c1aadc826160c06d3d9ada6426ed3be3477fa9ac09875c60f61c",
+          "preparedSha256": "8ab1a9983034323ba023a044e48858f60e63bf3f14140c92c4102ebaa42ca233",
           "dependencies": [
             {
               "kind": "repository",
@@ -159,7 +159,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 196,
+      "durationMs": 204,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -217,7 +217,7 @@
               "id": "shared-types",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-O6VoxX/child.html",
+                "file": "/tmp/archify-explainer-check-fOLYLj/child.html",
                 "artifact": {
                   "sha256": "98f871d9507c919dd20cab69411404aadddaf677a4903ac27f04a0dba53243ed",
                   "bytes": 830913
@@ -347,7 +347,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "d28f47f9-64b2-4391-8542-36d6b9c59f20"
+        "deliveryReceiptId": "0af82864-6464-4410-85f5-c3f29e903f29"
       }
     }
   },
@@ -361,8 +361,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/09-cross-cutting.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T09:26:57.643Z",
-  "durationMs": 717,
+  "finishedAt": "2026-10-31T02:01:46.943Z",
+  "durationMs": 722,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

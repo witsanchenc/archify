@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T09:26:54.220Z",
+  "startedAt": "2026-10-31T02:01:43.370Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
     "sha256": "76366ca2a36c8bb55a39e8d14ad380992870cf831b90acb8da18e80814f52817",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 845,
+      "durationMs": 892,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "0dbff1ea-f423-428b-a746-7ec3a9fbaf31",
+        "receiptId": "b5e23a23-605c-440b-89c9-5d7873a655d1",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.html",
         "explainer": {
-          "preparedSha256": "dc1b8e412820c43e7ff96f76e62226c255ad4e549528a7d0ac35d0e8da38232d",
+          "preparedSha256": "28054c7311c23cbf158f6c20efe4061498aa074b9f33ab96a542bb9b8e1e581e",
           "dependencies": [
             {
               "kind": "repository",
@@ -175,7 +175,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 393,
+      "durationMs": 397,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -235,7 +235,7 @@
               "id": "aggregate",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-3ztmzZ/child.html",
+                "file": "/tmp/archify-explainer-check-78dvKm/child.html",
                 "artifact": {
                   "sha256": "15d87850beec18521aa9541d8569bd92b957e91bd45f63f4156282d4ff18e2fb",
                   "bytes": 837914
@@ -362,7 +362,7 @@
               "id": "game-status",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-rbeD23/child.html",
+                "file": "/tmp/archify-explainer-check-kiAu3q/child.html",
                 "artifact": {
                   "sha256": "835375cf780d6f4bf3eac9c884feaed5b756a1bec30ebfc876865c98715169b5",
                   "bytes": 824443
@@ -489,7 +489,7 @@
               "id": "screen-status",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-jMUgdD/child.html",
+                "file": "/tmp/archify-explainer-check-LPUuoz/child.html",
                 "artifact": {
                   "sha256": "8e9ce21dbe34c07c3d5a4984307e5d3f7a8267c49a37e4db971dd15d7a928e39",
                   "bytes": 827519
@@ -616,7 +616,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "0dbff1ea-f423-428b-a746-7ec3a9fbaf31"
+        "deliveryReceiptId": "b5e23a23-605c-440b-89c9-5d7873a655d1"
       }
     }
   },
@@ -630,8 +630,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/07-battle-classes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T09:26:55.515Z",
-  "durationMs": 1295,
+  "finishedAt": "2026-10-31T02:01:44.718Z",
+  "durationMs": 1348,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

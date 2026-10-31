@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-30T09:26:55.874Z",
+  "startedAt": "2026-10-31T02:01:45.095Z",
   "specification": {
     "path": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
     "sha256": "4a03e489b173537fde0b9e4cfdc2c4f963448a4c0f83a567a0e22271eb51bdb8",
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 456,
+      "durationMs": 468,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "3af3b2be-10b8-40aa-bd99-2e7743a4d88f",
+        "receiptId": "59bd793b-5770-46b8-b498-086133a28d52",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.archify.md",
         "output": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.html",
         "explainer": {
-          "preparedSha256": "0d4cefbfafcbdb49fa32ad14f7f6c6c8fc46a5fb8002e2526f3af6e462e0476b",
+          "preparedSha256": "e7fe644f95ea5bb70896595fa3d3d9d4f73ab0ad236988e45f15e958910f83be",
           "dependencies": [
             {
               "kind": "repository",
@@ -159,7 +159,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 197,
+      "durationMs": 215,
       "command": [
         "/exec-daemon/node",
         "/workspace/archify/bin/archify.mjs",
@@ -217,7 +217,7 @@
               "id": "growth-types",
               "receipt": {
                 "ok": true,
-                "file": "/tmp/archify-explainer-check-C7EzyM/child.html",
+                "file": "/tmp/archify-explainer-check-ht9UbH/child.html",
                 "artifact": {
                   "sha256": "777ff68f9b521e01371947d112175a0940b64ecda95a36afc272e29990e42682",
                   "bytes": 834661
@@ -347,7 +347,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "3af3b2be-10b8-40aa-bd99-2e7743a4d88f"
+        "deliveryReceiptId": "59bd793b-5770-46b8-b498-086133a28d52"
       }
     }
   },
@@ -361,8 +361,8 @@
     "summaryReceipt": "/workspace/archify-layers/examples/tank-ddd/08-progression-classes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-30T09:26:56.580Z",
-  "durationMs": 705,
+  "finishedAt": "2026-10-31T02:01:45.835Z",
+  "durationMs": 739,
   "update": {
     "status": "unavailable",
     "installedVersion": null,
