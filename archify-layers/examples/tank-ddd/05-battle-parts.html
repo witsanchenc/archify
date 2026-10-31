@@ -2430,23 +2430,7 @@ a.archify-layers-node text.t-primary{text-decoration:underline;text-underline-of
     viewerDialog.append(frame);
     nativeHtml(diagram).then(html=>{
       if (viewer?.frame !== frame) return;
-      const end = html.toLowerCase().lastIndexOf('<script id="archify-layers-behavior">
-document.addEventListener('click',function(event){
-  var closest=event.target&&event.target.closest;
-  if(!closest)return;
-  var link=event.target.closest('a.archify-layers-node');
-  if(link&&link.getAttribute('href')){
-    event.preventDefault();
-    event.stopPropagation();
-    location.href=link.getAttribute('href');
-    return;
-  }
-  if(event.target.closest('.diagram-preview')){
-    event.preventDefault();
-    event.stopPropagation();
-  }
-},true);
-</script></body>');
+      const end = html.toLowerCase().lastIndexOf('</body>');
       frame.srcdoc = end < 0 ? html + script : html.slice(0,end) + script + html.slice(end);
     },()=>notify(say('This diagram could not be opened.','无法打开此交互图。')));
   }
@@ -2747,4 +2731,20 @@ document.addEventListener('click',function(event){
   let resizeFrame;
   window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame = requestAnimationFrame(relayout);});
 })();
+</script><script id="archify-layers-behavior">
+document.addEventListener('click',function(event){
+  var closest=event.target&&event.target.closest;
+  if(!closest)return;
+  var link=event.target.closest('a.archify-layers-node');
+  if(link&&link.getAttribute('href')){
+    event.preventDefault();
+    event.stopPropagation();
+    location.href=link.getAttribute('href');
+    return;
+  }
+  if(event.target.closest('.diagram-preview')){
+    event.preventDefault();
+    event.stopPropagation();
+  }
+},true);
 </script></body></html>

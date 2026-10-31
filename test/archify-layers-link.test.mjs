@@ -120,6 +120,24 @@ test('links a diagram box to its child page and rejects a missing node', () => {
   assert.equal(fs.readFileSync(path.join(dir, '00-map.html'), 'utf8'), before);
 });
 
+test('keeps the behavior script out of a runtime string that mentions body', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'archify-layers-'));
+  writeSite(dir);
+  const runtime = `<script>(() => { const end = html.toLowerCase().lastIndexOf('</body>'); frame.srcdoc = end; })();</script>`;
+  const file = path.join(dir, '01-system.html');
+  const original = fs.readFileSync(file, 'utf8').replace('</body>', `${runtime}</body>`);
+  fs.writeFileSync(file, original);
+  const result = run(dir);
+  assert.equal(result.status, 0, result.stderr);
+  const html = fs.readFileSync(file, 'utf8');
+  assert.equal((html.match(/<script\b/g) || []).length, (html.match(/<\/script>/g) || []).length);
+  assert.match(html, /lastIndexOf\('<\/body>'\); frame\.srcdoc/);
+  assert.doesNotMatch(html, /lastIndexOf\('<script id="archify-layers-behavior"/);
+  const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '');
+  assert.doesNotMatch(visible, /frame\.srcdoc/);
+  assert.doesNotMatch(visible, /addEventListener/);
+});
+
 test('rejects a parent cycle before writing', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'archify-layers-'));
   writeSite(dir, {

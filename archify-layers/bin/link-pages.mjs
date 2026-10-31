@@ -296,7 +296,11 @@ function insert(html, page) {
   } else {
     next = nav + next;
   }
-  if (next.includes('</body>')) next = next.replace('</body>', `${behavior}</body>`);
+  // The explainer runtime contains the characters "</body>" inside a script string.
+  // Replacing the first match splices this script into that string and the
+  // following "</script>" ends the runtime early, so the rest is visible text.
+  const bodyClose = next.lastIndexOf('</body>');
+  if (bodyClose >= 0) next = next.slice(0, bodyClose) + behavior + next.slice(bodyClose);
   else next += behavior;
   return next;
 }
